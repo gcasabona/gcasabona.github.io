@@ -1122,7 +1122,7 @@ input, select, textarea {
 			background-image:  linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("/images/bhbh.jpg");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-repeat: no-repeat, no-repeat;
 			z-index: 2;
 		}
 
