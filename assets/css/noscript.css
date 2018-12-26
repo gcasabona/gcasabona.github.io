@@ -7,7 +7,7 @@
 /* BG */
 
 	body.is-preload #bg:before {
-		 /* background-color: transparent; */
+		 background-color: ;
                  background-image: url("images/bhbh.jpg");
 	}
 
@@ -21,7 +21,7 @@
 	}
 
 		body.is-preload #header > * {
-			opacity: 0;
+			opacity: 1;
 		}
 
 		body.is-preload #header .content .inner {
