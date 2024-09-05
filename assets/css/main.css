@@ -1638,13 +1638,14 @@ input, select, textarea {
 		}
 
 /* Video format */
+		/* Ensure that the iframe and container are responsive */
 .video-container {
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     height: 0;
     overflow: hidden;
     max-width: 100%;
+    background-color: #000; /* Optional: Background color before video loads */
 }
 
 .video-container iframe {
@@ -1653,30 +1654,42 @@ input, select, textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 0;
 }
 
+/* Style for video description box */
 .video-description {
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 800px; /* Adjust to fit within your layout */
+    margin: 20px auto; /* Centers the description */
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Styling for the video title */
+/* Styling for the title inside the description */
 .video-description h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 10px;
     color: #333;
+    text-align: center; /* Center the title */
 }
 
-/* Styling for the video description text */
+/* Styling for the paragraph inside the description */
 .video-description p {
     font-size: 1em;
     color: #555;
     line-height: 1.6;
+    text-align: justify; /* Neat text alignment */
 }
+
+/* Optional link styling */
+.video-description a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.video-description a:hover {
+    text-decoration: underline;
+}
+
