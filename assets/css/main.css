@@ -1656,3 +1656,27 @@ input, select, textarea {
     border: 0;
 }
 
+.video-description {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the video title */
+.video-description h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styling for the video description text */
+.video-description p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
