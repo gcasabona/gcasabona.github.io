@@ -1256,7 +1256,7 @@ input, select, textarea {
 			    top: calc(-3.5rem - 1px);
 			    left: calc(50% - 1px);
 			    width: 1px;
-			    height: calc(3.5rem + 1px);
+			    height: calc(2.5rem + 1px);
 			    background: #ffffff;
 
 			    /* NEW → Keep the line behind nav */
@@ -1700,13 +1700,3 @@ input, select, textarea {
 .video-description p {
     font-size: 1em;
     color: #555;
-    line-height: 1.6;
-    text-align: justify; /* Neat text alignment */
-}
-
-/* Optional link styling */
-.video-description a {
-    color: #3498db;
-    text-decoration: none;
-}
-
