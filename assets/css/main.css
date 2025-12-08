@@ -1312,48 +1312,52 @@ input, select, textarea {
 				line-height: 2;
 			}
 
-/* Header Navigation - Fixed */
+		/* Header Navigation - Corrected Version */
 #header nav ul {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     border: 1px solid #ffffff;
     border-radius: 4px;
-    overflow: hidden; /* ensures hover background does not overflow */
+    overflow: hidden; /* ensures hover remains inside */
 }
 
 #header nav ul li {
-    flex: 1; /* all tabs equal width */
-    border-left: 1px solid #ffffff;
+    flex: 1; /* equal-width tabs */
+    margin: 0;
+    padding: 0;
 }
 
-#header nav ul li:first-child {
-    border-left: 0;
-}
-
+/* Move borders to the <a> tag so hover works cleanly */
 #header nav ul li a {
     display: flex;
-    justify-content: center; /* horizontal center */
-    align-items: center;     /* vertical center */
-    min-width: 7.5rem;       /* adjust if needed */
+    justify-content: center;
+    align-items: center;
+    min-width: 7.5rem;
     height: 2.75rem;
-    padding: 0 1.25rem;      /* symmetric padding */
+
+    /* Even padding so text is centered */
+    padding: 0 1.25rem;
+
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-size: 0.8rem;
-    text-align: center;
-    color: #ffffff;
     text-decoration: none;
-    box-sizing: border-box;  /* include padding/border in width */
-    transition: background-color 0.3s ease;
+    color: #ffffff;
+
+    border-left: 1px solid #ffffff; /* borders now here */
+    box-sizing: border-box;
+
+    transition: background-color 0.25s ease;
+}
+
+#header nav ul li:first-child a {
+    border-left: none; /* remove first border */
 }
 
 #header nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.075); /* subtle hover */
+    background-color: rgba(255, 255, 255, 0.075);
 }
 
 #header nav ul li a:active {
