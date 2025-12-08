@@ -1248,15 +1248,25 @@ input, select, textarea {
 			margin-top: 3.5rem;
 		}
 
+			/* Vertical connector line (original) */
 			#header > *:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: calc(-3.5rem - 1px);
-				left: calc(50% - 1px);
-				width: 1px;
-				height: calc(3.5rem + 1px);
-				background: #ffffff;
+			    content: '';
+			    display: block;
+			    position: absolute;
+			    top: calc(-3.5rem - 1px);
+			    left: calc(50% - 1px);
+			    width: 1px;
+			    height: calc(3.5rem + 1px);
+			    background: #ffffff;
+
+			    /* NEW → Keep the line behind nav */
+			    z-index: 1;
+			}
+
+			/* NEW → Ensure navigation sits above the vertical line */
+			#header nav {
+			    position: relative;
+			    z-index: 2;
 			}
 
 		#header > :first-child {
@@ -1698,9 +1708,5 @@ input, select, textarea {
 .video-description a {
     color: #3498db;
     text-decoration: none;
-}
-
-.video-description a:hover {
-    text-decoration: underline;
 }
 
