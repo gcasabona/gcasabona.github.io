@@ -1259,15 +1259,8 @@ input, select, textarea {
 			    height: calc(2.5rem + 1px);
 			    background: #ffffff;
 
-			    /* NEW → Keep the line behind nav */
-			    z-index: 1;
 			}
 
-			/* NEW → Ensure navigation sits above the vertical line */
-			#header nav {
-			    position: relative;
-			    z-index: 2;
-			}
 
 		#header > :first-child {
 			margin-top: 0;
