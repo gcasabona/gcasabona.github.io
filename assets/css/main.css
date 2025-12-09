@@ -1707,4 +1707,11 @@ article:after {
     border: none !important;
     height: 0 !important;
 }
+#publications {
+    border: none !important;
+    box-shadow: none !important;
+}
+#publications p {
+    border: none !important;
+}
 
