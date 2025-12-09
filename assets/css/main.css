@@ -1700,3 +1700,11 @@ h2.major:before {
     display: none !important;
 }
 
+article:before,
+article:after {
+    display: none !important;
+    background: none !important;
+    border: none !important;
+    height: 0 !important;
+}
+
