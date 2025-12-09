@@ -1714,4 +1714,13 @@ article:after {
 #publications p {
     border: none !important;
 }
+/* Remove line inside Publications tab */
+#publications {
+    border-top: none !important;
+    box-shadow: none !important;
+}
+
+#publications p:first-child {
+    border-top: none !important;
+}
 
