@@ -1693,3 +1693,10 @@ input, select, textarea {
 .video-description p {
     font-size: 1em;
     color: #555;
+
+
+    /* GC Remove line before all major section headers */
+h2.major:before {
+    display: none !important;
+}
+
