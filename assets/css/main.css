@@ -1139,7 +1139,7 @@ input, select, textarea {
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			z-index: 1;
+			z-index: -1;
 		}
 
 		body.is-article-visible #bg:after {
