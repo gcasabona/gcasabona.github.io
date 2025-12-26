@@ -1700,6 +1700,7 @@ h2.major:before {
     display: none !important;
 }
 
+/*
 article:before,
 article:after {
     display: none !important;
@@ -1707,6 +1708,7 @@ article:after {
     border: none !important;
     height: 0 !important;
 }
+*/
 #publications {
     border: none !important;
     box-shadow: none !important;
