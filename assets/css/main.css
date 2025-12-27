@@ -1780,4 +1780,34 @@ body::before,
     border-radius: 6px;
     display: inline-block;
 }
+/* GC added to make front page opaque */
+/* Lift header content above the background overlay */
+#header .content,
+#header nav {
+    position: relative;
+    z-index: 2;
+}
+
+/* Translucent background for intro text AND tabs */
+#header .inner,
+#header nav {
+    background: rgba(19, 21, 25, 0.75);
+    border-radius: 8px;
+}
+
+/* Padding */
+#header .inner {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto 1.5rem auto;
+}
+
+#header nav {
+    padding: 0.75rem 1.25rem;
+}
+
+/* Optional: soften tab links themselves */
+#header nav a {
+    border-radius: 4px;
+}
 
