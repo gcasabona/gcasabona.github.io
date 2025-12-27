@@ -1700,6 +1700,7 @@ h2.major:before {
     display: none !important;
 }
 
+/* GC commented out to try and fix image problem */
 /*
 article:before,
 article:after {
@@ -1710,12 +1711,14 @@ article:after {
 }
 */
 
+/* GC added to try and fix image problem */
+/*
 article:not(#intro):not(#cv):before,
 article:not(#intro):not(#cv):after {
     display: none !important;
     background: none !important;
 }
-
+*/
 #publications {
     border: none !important;
     box-shadow: none !important;
@@ -1731,5 +1734,31 @@ article:not(#intro):not(#cv):after {
 
 #publications p:first-child {
     border-top: none !important;
+}
+/* GC adding for image issue */
+/* === FORCE REAL IMAGES TO RENDER ABOVE BACKGROUND === */
+
+/* Ensure image containers behave normally */
+span.image,
+span.image.main {
+    position: relative !important;
+    background: none !important;
+    z-index: 1 !important;
+}
+
+/* Force actual <img> elements to the top */
+span.image img,
+span.image.main img {
+    position: relative !important;
+    z-index: 2 !important;
+    background: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Push global background behind everything */
+body::before,
+#wrapper::before {
+    z-index: -1 !important;
 }
 
