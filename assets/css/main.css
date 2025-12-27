@@ -1773,3 +1773,11 @@ body::before,
     content: none !important;
 }
 
+/* Add translucent background behind intro text */
+#intro p {
+    background: rgba(19, 21, 25, 0.75); /* dark, semi-transparent */
+    padding: 1em 1.25em;
+    border-radius: 6px;
+    display: inline-block;
+}
+
