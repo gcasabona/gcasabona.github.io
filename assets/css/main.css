@@ -1762,3 +1762,10 @@ body::before,
     z-index: -1 !important;
 }
 
+/* DEBUG: disable ALL pseudo-elements */
+*::before,
+*::after {
+    background: none !important;
+    content: none !important;
+}
+
