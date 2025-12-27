@@ -638,6 +638,10 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
+		/* GC fixing above */
+		.image.main::before {
+    			display: none !important;
+		}
 
 		.image img {
 			border-radius: 4px;
